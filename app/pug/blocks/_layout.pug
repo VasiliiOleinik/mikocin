@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(href="assets/img/favicon.ico", rel="shortcut icon")
+    link(type="text/css", href="css/libs.min.css", rel="stylesheet")
+    link(type="text/css", href="css/jquery-ui.min.css", rel="stylesheet")
+    link(type="text/css", href="css/main.css", rel="stylesheet")
+    title FOOD APP
+  body
+    #contentWrapper.content-wrapper
+      #pageWrapper.page-wrapper
+        include _header
+        block content
+
+      #footerWrapper.footer-wrapper
+        include _footer
+    script(src="js/common.js")
