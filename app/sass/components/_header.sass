@@ -1,4 +1,27 @@
-.header
-  height: 40px
-  width: 100%
-  background: $bg-color
+.main--img
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+.header--content
+  padding-top: 23px
+  & .header__bullets
+    max-width: 63%
+    width: 100%
+    margin-left: 90px
+    & .bullet
+      max-height: 40px
+      &:not(:last-of-type)
+        margin-right: 35px
+      & span
+        font-style: italic
+        color: $gray
+      & img
+        flex-shrink: 0
+        margin-right: 15px
+  & .header__logo
+    & span
+      font-weight: 700
+      color: $dark-text
+      font-size: 22px
+      margin-left: 15px
